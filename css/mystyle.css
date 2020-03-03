@@ -1,0 +1,285 @@
+*{
+	margin-top: 0;
+	border: 0;
+	font-family: 'Abel', sans-serif;
+}
+p {
+	font-size: 18px;
+}
+h2{
+	text-align: center;
+}
+.logo{
+	width: 250px;
+}
+
+.logo img{
+	width: 60px;
+}
+
+.logo p{
+	color: #ffffff;
+	font-weight: bold;
+}
+.container-fluid {
+    padding: 50px;
+    border: 0;
+}
+.navbar {
+	width: 100%;
+	height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
+    background-color: #b30000;
+    border:0;
+    margin:0;
+}
+.navbar-nav li a{
+	font-weight: bold;
+	font-size: 18px;
+    color: #ffffff !important;
+}
+
+.navbar-nav  li a:hover {
+      color: #e60000 !important;
+}
+.banner1{
+	background-image: url("../img/banner1.jpg");
+	background-position: center !important;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+}
+.banner2{
+	background-image: url("../img/banner2.jpg");
+	background-position: center !important;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+}
+.banner3{
+	background-image: url("../img/banner3.jpg");
+	background-position: center !important;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+}
+
+
+/*Inicio da conf. da pág teatro.html */
+
+.topteatro{
+	background-image: url("../img/topteatro.jpg");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+}
+
+.oteatro h1{
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.oteatro h2, h3{
+	padding-left: 10%;
+	padding-right: 10%;
+	font-weight: bold;
+}
+
+.oteatro p{
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: justify;
+}
+
+/*Final da Configuração da pág do teatro.html*/
+
+/*Configuração da pág programacao.html*/
+.topcartas{
+	background-image: url("../img/cartas.jpg");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+	border:none;
+}
+.topcartas p{
+	color: #ffffff;
+	text-align: center;
+	padding-top: 160px;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+
+/*Fim da conf. da pág programacao.html*/
+
+/*Conf da pág bilheteria*/
+
+.bilheteria h3{
+	margin-left: 10%;
+}
+
+.text-bilhete{
+	width:480px;
+	height:350px;
+	margin-left: 20%;
+	font-size: 18px;
+}
+
+.img-bilhete img{
+	width: 450px;
+	float: right;
+	margin-right: 20%;
+	margin-top: -400px;
+}
+.cad{
+	width: 450px;
+	margin-right: 13%;
+	float: right;
+}
+
+.cad1 {
+	width: 450px;
+	float: left;
+	margin-left: 73%;
+}
+
+/*Fim da pág bilheteria*/
+
+/*Conf da pág contato.html*/ 
+
+form{
+	width: 600px;
+	margin: 150px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+.cont-contato input, textarea{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border: #000 solid 1px;
+}
+
+textarea{
+	min-height: 100px !important;
+	max-height: 200px !important;
+	max-width: 560px !important;
+}
+#botao{
+	background-color:  #b30000;
+	color: #ffffff;
+	padding: 15px;
+	border:none;
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+#botao:hover{
+	color: #e60000;
+	cursor: pointer;
+}
+
+.text-contato{
+	margin-left: 750px;
+	margin-top: -550px;
+
+}
+
+.title-contato{
+	margin-left: 168px;
+	margin-top: 80px;
+}
+
+.footer-contato{
+	margin-top: 350px;
+	height: 500px;
+	width: 100%;
+	background-color: #b30000;
+}
+.footer-contato iframe{
+	margin-left: 5%;
+	margin-top: 4%;
+}
+
+/*Fim da conf da pág contato.html*/
+
+/*Conf da pag cadastro*/
+
+.jumbotron{
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	width:50%;
+	margin-bottom:8px;
+	width:50%;
+}
+
+/*Fim da conf da pag cadastro*/
+
+
+/*Configuração footer de todas as paginas, menos a contato*/
+.botom-contato{
+	width: 100%;
+	height: 400px;
+	background-color: #b30000;
+	margin-top: 70px;
+}
+.botom-contato h3, p{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.botom-contato h3{
+	padding-top: 60px;
+	color: #ffffff;
+}
+
+.botom-contato p{
+	color: #ffffff;
+}
+
+.botom-contato iframe{
+	float: right;
+	margin-right: 10%;
+	margin-top: -260px;
+}
+
+.redesocial img:hover{
+	background-image: url("../img/facebook-color.png");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+}
+.redesocial a{
+	padding-left: 10%;
+}
+.botom{
+	width: 100%;
+	height: 60px;
+	background-color: #cc0000;
+}
+.botom p{
+	text-align: center;
+	font-size: 16px
+	padding-top: 10%;
+	color: #ffffff;
+}
+/*Fim da configuração do footer*/

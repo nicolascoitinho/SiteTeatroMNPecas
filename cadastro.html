@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="teatro">
+<head>
+	<title>Cadastro - Teatro MN Peças</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<script src="angular/angular.min.js"> </script>
+	<script>
+        	angular.module("teatro",[]);
+			angular.module("teatro").controller("lista",function($scope){	
+				$scope.contatos = [
+									
+								  ];
+				$scope.adicionar = function(){
+					$scope.contatos.push({nome:$scope.nome,rg:$scope.rg,telefone:$scope.telefone,email:$scope.email,endereco:$scope.endereco});
+				}
+				$scope.apagar = function(contatos){
+					$scope.contatos = contatos.filter(function(item){
+						if(!item.selecionado)return item;
+					});
+				}
+				$scope.ordenar = function(campo){
+					$scope.ordenarNome=campo;
+				}
+			});
+        </script>
+</head>
+<body ng-controller="lista">
+
+	<header>
+			<nav class="navbar navbar-default">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <div class="logo">
+				    <a href="index.html">
+				    	<p><img src="img/logo.png"  alt="Logotipo">  Teatro MN Peças<p>
+				    </a>
+			      </div>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="teatro.html">O Teatro</a></li>
+			        <li><a href="programacao.html">Programação</a></li>
+			        <li><a href="bilheteria.html">Bilheteria</a></li>
+			        <li><a href="contato.html">Contato</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+
+	<div class="jumbotron">
+    	<label for="nome">Nome:</label><input id="nome" type="text" class="form-control" ng-model="nome">
+        <label for="rg">CPF:</label><input id="rg" type="number" min="0" class="form-control" ng-model="rg">
+        <label for="tel">Telefone:</label><input id="telefone" min="0" type="number" class="form-control" ng-model="telefone">
+        <label for="email">Email:</label><input id="email" type="text" class="form-control" ng-model="email">
+        <button class="btn btn-primary btn-block" ng-click="adicionar()" ng-disabled="!nome || !rg || !telefone || !email">Cadastrar</button>
+    </div>
+
+    <footer>
+			<div class="botom-contato">
+				<h3>Entre em contato conosco</h3>
+				<p>Av .Victor Barreto, nº 131 - Centro, Canoas
+					<br>
+					Fone: (51) 3425-0000
+					<br>
+					sac@teatroaledria.com.br</p>
+			<div class="redesocial">
+				<h3>Rede Social</h3>
+				<a href="#"><img src="img/facebook.png" width="40"></a>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.2737960734917!2d-51.184400485326414!3d-29.914018932181897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197aa7ee67b891%3A0x39995d5fc0419785!2sAv.+V%C3%ADtor+Barreto%2C+Canoas+-+RS!5e0!3m2!1spt-BR!2sbr!4v1499978120456" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>			
+			</div>
+
+			<div class="botom">
+				<p>Todos os direitos reservados. Desenvolvido por Nicolas | Mairon.</p>
+			</div>
+	</footer>
+
+</body>
+</html>
